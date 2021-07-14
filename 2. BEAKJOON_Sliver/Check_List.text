@@ -40,6 +40,8 @@
 
 
 
+< 백준 실버 정렬 >
+
 1032   *** vector<pair< , >> vec;   pair<>을 vector로 넣게되면  값을 2개씩 저장할 수 있습니다. ( map(키값과 값을 가진 연관컨테이너)을 vector로 복사하여 옮길때 사용할 수 있습니다.)
 
        sort(iterator.begin(),iterator.end(),Compare);   Compare는 함수로써 sort정렬의 기준을 선언할 수 있습니다.
@@ -48,3 +50,35 @@
        {
             A>B;                
        }
+
+
+
+10989  new int와 같은 동적할당은 Heap에, int arr[]과 같은 배열은 stack에 할당이 된다.   *** 디버깅에서 프로세스메모리는 전체 code,data,heap,stack메모리를 모두 합친것을 나타내고,
+                                                     
+                                                                                    *** 아래의 힙 스냅샷은  heap의 메모리만 나타내므로, 디버깅시 활용하면 좋습니다.
+                                                                                    
+
+
+1931   *** vector<pair<>>에서 pair로 push_back할 때에는   .push_back(make_pair(A,B));    make_pair을 통해서 값 2개를 동시에 push_back 한다.
+
+       ***** 정렬기준이 너무 많을때에는 한번에 정렬할 생각을 구지 안해도 된다.  나누어서 배열을 하거나  부분배열 + 출력을 다르게 하기 등 여러 관점으로 보자. *****
+
+
+
+10814  *** multimap은 중복되는 키값이 있을 경우, 들어오는 순서를 유지하여서 insert되어서 정렬된다.     (또한 들어오는 순서를 유지하며 정렬하는 방법으로 stable_Sort가 있다.)
+
+
+
+2217   rbegin(), rend()  <역으로 itr을 이동시키는 메소드> 을 이용할때에는 ::reverse_iterator (역방향 반복자)를 선언해 주어야 한다.
+
+
+
+2822   vector<pair<>>을 sort할 때  compare함수는   bool compare(pair<int,int> a, pair<int,int> b) {    ...   } ;  이런식으로 pair<>을 인자로 받아서 비교연산을 해주어야 한다.
+
+
+
+
+
+
+
+
