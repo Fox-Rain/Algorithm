@@ -11,6 +11,11 @@ Dynamic set ?    여러개의 키를 저장하며  Insert, Search, Delete 연산을 지원하는 
 // *** 이진검색트리는 꼭 Complete Binary Tree일 필요가 없다. (모든 노드들이 순차적으로 차있을 필요가 없음), 힙과 다른점으로 힙은 부모보다 무조건 자식노드들이 작아야하지만( max property), 이진검색트리는 다르다.
 
 
+/*
+	각종연산의 시간복잡도 logN = h   O(h)     그러나, 최악의 경우 트리의 높이가 N=h일 경우 O(N)
+
+*/
+
 #include<iostream>
 
 using namespace std;
